@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Employee Registration Form</h2>
+
+        <form id="myForm">
+
+            <label>Employee Name:</label>
+            <input type="text" id="name">
+            <p id="nameError"></p>
+
+            <label>Email:</label>
+            <input type="text" id="email">
+            <p id="emailError"></p>
+
+            <label>Password:</label>
+            <input type="password" id="password">
+            <p id="passwordError"></p>
+
+            <label>Phone Number:</label>
+            <input type="text" id="phone">
+            <p id="phoneError"></p>
+
+            <label>Department:</label>
+            <select id="department">
+                <option value="">Select Department</option>
+                <option>IT</option>
+                <option>HR</option>
+                <option>Finance</option>
+                <option>Marketing</option>
+            </select>
+            <p id="departmentError"></p>
+
+            <button type="submit">Register</button>
+
+        </form>
+
+        <h3 id="message"></h3>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎓 Student Result Management</h1>
+        <p>Manage student marks, results and class performance</p>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Add Student Result</h2>
+
+            <form id="resultForm">
+                <div class="form-grid">
+                    <div>
+                        <label for="roll">Roll Number</label>
+                        <input type="text" id="roll"
+                               placeholder="e.g. 101" required>
+                    </div>
+
+                    <div>
+                        <label for="name">Student Name</label>
+                        <input type="text" id="name"
+                               placeholder="Enter full name" required>
+                    </div>
+
+                    <div>
+                        <label for="htmlMarks">HTML Marks (out of 100)</label>
+                        <input type="number" id="htmlMarks"
+                               min="0" max="100" step="1" required>
+                    </div>
+
+                    <div>
+                        <label for="cssMarks">CSS Marks (out of 100)</label>
+                        <input type="number" id="cssMarks"
+                               min="0" max="100" step="1" required>
+                    </div>
+
+                    <div>
+                        <label for="jsMarks">JavaScript Marks (out of 100)</label>
+                        <input type="number" id="jsMarks"
+                               min="0" max="100" step="1" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="primary-btn">
+                    Add Student
+                </button>
+                <button type="reset" class="secondary-btn">
+                    Clear Form
+                </button>
+            </form>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <span>Total Students</span>
+                <h2 id="studentCount">0</h2>
+            </div>
+
+            <div class="stat-card">
+                <span>Class Average</span>
+                <h2 id="classAverage">0%</h2>
+            </div>
+
+            <div class="stat-card topper-card">
+                <span>🏆 Class Topper</span>
+                <h2 id="topperName">Not available</h2>
+                <p id="topperPercentage">Add student results</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="table-heading">
+                <h2>Student Records</h2>
+                <button id="clearAll" class="danger-btn" type="button">
+                    Clear All Records
+                </button>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Roll No.</th>
+                            <th>Name</th>
+                            <th>HTML</th>
+                            <th>CSS</th>
+                            <th>JavaScript</th>
+                            <th>Total / 300</th>
+                            <th>Percentage</th>
+                            <th>Result</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultBody">
+                        <tr>
+                            <td colspan="9" class="empty">
+                                No student records available.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Student Result Management System | HTML, CSS & JavaScript
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

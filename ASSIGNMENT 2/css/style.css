@@ -1,0 +1,209 @@
+/* ==========================================
+   PERSONAL PORTFOLIO
+   CUSTOM CSS
+========================================== */
+
+
+/* GENERAL */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    padding-top: 56px;
+    font-family: Arial, sans-serif;
+}
+
+
+/* HERO */
+
+.hero-section {
+    background: linear-gradient(
+        135deg,
+        #f8f9fa,
+        #e9f2ff
+    );
+}
+
+
+.hero-section h1 {
+    color: #212529;
+}
+
+
+.hero-section h2 {
+    font-size: 1.5rem;
+}
+
+
+/* PROFILE */
+
+.profile-box {
+
+    width: 260px;
+    height: 260px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0d6efd,
+            #6610f2
+        );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    box-shadow:
+        0 15px 40px
+        rgba(13, 110, 253, .25);
+
+}
+
+
+.profile-box i {
+    font-size: 120px;
+}
+
+
+/* SECTION HEADINGS */
+
+section h2 {
+    color: #212529;
+}
+
+
+/* CARDS */
+
+.card {
+    border: none;
+    transition: .3s ease;
+}
+
+
+.card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 12px 30px
+        rgba(0, 0, 0, .12) !important;
+
+}
+
+
+/* PROJECT ICON */
+
+.project-icon {
+
+    height: 150px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0d6efd,
+            #6610f2
+        );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+}
+
+
+.project-icon i {
+    font-size: 60px;
+}
+
+
+/* PROGRESS */
+
+.progress {
+
+    height: 25px;
+
+}
+
+
+.progress-bar {
+
+    font-weight: bold;
+
+}
+
+
+/* NAVBAR */
+
+.navbar .nav-link {
+
+    transition: .3s;
+
+}
+
+
+.navbar .nav-link:hover {
+
+    color: #0d6efd !important;
+
+}
+
+
+/* FOOTER */
+
+footer a {
+
+    text-decoration: none;
+
+    transition: .3s;
+
+}
+
+
+footer a:hover {
+
+    color: #0d6efd !important;
+
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .hero-section h1 {
+
+        font-size: 2.8rem;
+
+    }
+
+
+    .profile-box {
+
+        width: 200px;
+        height: 200px;
+
+    }
+
+
+    .profile-box i {
+
+        font-size: 90px;
+
+    }
+
+}
